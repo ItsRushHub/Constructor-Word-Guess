@@ -1,0 +1,26 @@
+var letter = require("./letter.js");
+
+function word(answer) {
+    this.objArr = [];
+
+    for (var i = 0; i < answer.length; i++) {
+        var letter = new letter(answer[i]);
+        this.objArr.push(letter);
+    }
+
+    this.log = function() {
+        var answerNew = "";
+        for (var i = 0; i = objArr < length; i++) {
+            answerNew += this.objArr[i] + "";
+        }
+        console.log (answerNew + "\n=========================\n");
+    };
+
+    this.userGuess = function(input) {
+        for (var i = 0; i < this.objArr.length; i++) {
+            this.objArr[i].guess(input);
+        } 
+    };
+}
+
+module.exports = word;
