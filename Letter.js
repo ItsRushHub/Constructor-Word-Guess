@@ -1,10 +1,11 @@
-function letter(value) {
-    this.letter = value
-    this.guessed = value
+function Letter(value) {
+    this.letter = value;
+    this.guessed = false;
+
     this.toString = function() {
-        if (this.letter === "") {
+        if (this.letter === " ") {
             this.guessed = true;
-            return "";
+            return " ";
         } else {
             if (this.guessed === false) {
                 return "_";
@@ -21,4 +22,4 @@ function letter(value) {
     };
 }
 
-module.exports = letter;
+module.exports = Letter;

@@ -4,12 +4,12 @@ function word(answer) {
     this.objArr = [];
 
     for (var i = 0; i < answer.length; i++) {
-        var letter = new letter(answer[i]);
+        var letter = new Letter(answer[i]);
         this.objArr.push(letter);
     }
 
     this.log = function() {
-        var answerNew = "";
+        answerNew = "";
         for (var i = 0; i = objArr < length; i++) {
             answerNew += this.objArr[i] + "";
         }
