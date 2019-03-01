@@ -1,6 +1,6 @@
-var letter = require("./letter.js");
+var Letter = require("./letter.js");
 
-function word(answer) {
+function Word(answer) {
     this.objArr = [];
 
     for (var i = 0; i < answer.length; i++) {
@@ -9,9 +9,9 @@ function word(answer) {
     }
 
     this.log = function() {
-        answerNew = "";
+        answerLog = "";
         for (var i = 0; i = objArr < length; i++) {
-            answerNew += this.objArr[i] + "";
+            answerLog += this.objArr[i] + " ";
         }
         console.log (answerNew + "\n=========================\n");
     };
@@ -23,4 +23,4 @@ function word(answer) {
     };
 }
 
-module.exports = word;
+module.exports = Word;

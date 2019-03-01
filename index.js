@@ -23,12 +23,12 @@ function theLogic() {
         var randomWord = topMovies[randomIndex];
 
         computerWord = new Word(randomWord);
-
         requireNewWord = false;
     }
 
     var wordComplete = [];
-    computerWord.objArray.forEach(completeCheck);
+    console.log(computerWord)
+        // forEach(completeCheck));
 
 
     if (wordComplete.includes(false)) {
@@ -80,8 +80,8 @@ function theLogic() {
                     restartGame();
                 }
 
-                function wordCheck(key) {
-                    wordCheckArray.push(key.guessed);
+                function wordCheckArr(key) {
+                    wordCheckArr.push(key.guessed);
                 }
             }
         }
